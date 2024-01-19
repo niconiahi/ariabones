@@ -6,7 +6,8 @@
   "license": "ISC",
   "scripts": {
     "build": "pnpm -r --filter !@ariabones/playground build",
-    "publish": "pnpm -r --filter !@ariabones/playground  publish"
+    "version": "changeset version",
+    "publish": "pnpm -r --filter !@ariabones/playground publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
