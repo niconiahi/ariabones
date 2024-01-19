@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/hyperscript.org@0.9.12"></script>
+    <title>Vite + TS + Hyperscript</title>
+    <script type="module" crossorigin src="/assets/index-8OFdWrXl.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <section style="display: grid; grid-template-columns: 1fr; row-gap: 8px">
+      <button
+        id="disable-button"
+        _="on click set @disabled to true"
+        is="ariabones-button"
+      >
+        Disable button
+      </button>
+      <button
+        id="toggle-button"
+        _type="toggle"
+        is="ariabones-button"
+        style="display: flex; align-items: center; justify-content: center"
+      >
+        Toggle button
+      </button>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "ariabones",
+  "type": "module",
+  "description": "Headless, accessible and minimalistc components, compliant to WAI-ARIA specifications",
+  "author": "Nicolas Accetta",
+  "license": "ISC",
+  "scripts": {
+    "build": "pnpm -r --filter !@ariabones/playground build",
+    "publish": "pnpm -r --filter !@ariabones/playground  publish"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.6.3",
+    "@changesets/cli": "^2.27.1",
+    "eslint": "~8.56.0",
+    "eslint-plugin-format": "^0.1.0"
+  }
+}
