@@ -11,17 +11,13 @@
     <div id="root"></div>
     <script type="module" src="/src/main.ts"></script>
     <section style="display: grid; grid-template-columns: 1fr; row-gap: 8px">
-      <button
-        id="disable-button"
-        _="on click set @disabled to true"
-        is="ariabones-button"
-      >
+      <button is="ariabones-button" _="on click set @disabled to true">
         Disable button
       </button>
       <button
-        id="toggle-button"
-        _type="toggle"
         is="ariabones-button"
+        data-type="toggle"
+        data-pressed="true"
         style="display: flex; align-items: center; justify-content: center"
       >
         Toggle button
