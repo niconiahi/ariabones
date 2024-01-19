@@ -5,7 +5,10 @@
   "author": "Nicolas Accetta",
   "license": "ISC",
   "scripts": {
+    "dev": "pnpm -r dev",
     "build": "pnpm -r --filter !@ariabones/playground build",
+    "lint": "pnpm -r --filter !@ariabones/playground lint",
+    "lint:fix": "pnpm -r --filter !@ariabones/playground lint:fix",
     "version": "changeset version",
     "publish": "pnpm -r --filter !@ariabones/playground publish"
   },
