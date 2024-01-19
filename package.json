@@ -5,12 +5,12 @@
   "author": "Nicolas Accetta",
   "license": "ISC",
   "scripts": {
-    "dev": "pnpm -r dev",
-    "build": "pnpm -r --filter !@ariabones/playground build",
-    "lint": "pnpm -r --filter !@ariabones/playground lint",
-    "lint:fix": "pnpm -r --filter !@ariabones/playground lint:fix",
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r --filter !@ariabones/playground run build",
+    "lint": "pnpm -r --filter !@ariabones/playground run lint",
+    "lint:fix": "pnpm -r --filter !@ariabones/playground run lint:fix",
     "version": "changeset version",
-    "publish": "pnpm -r --filter !@ariabones/playground publish"
+    "publish": "pnpm -r --filter !@ariabones/playground run publish"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.6.3",
