@@ -6,7 +6,7 @@ class Button extends HTMLButtonElement {
   }
 
   static get observedAttributes(): string[] {
-    return ["disabled", "_type", "style"]
+    return ["disabled", "data-type"]
   }
 
   attributeChangedCallback(
@@ -22,11 +22,18 @@ class Button extends HTMLButtonElement {
         this.removeAttribute("aria-disabled")
       }
     }
-    if (name === "_type") {
+    if (name === "data-type") {
       // toggle
       if (newValue === "toggle") {
-        this.setAttribute("_", "on click if @aria-pressed equals 'false' set @aria-pressed to 'true' else set @aria-pressed to 'false'")
-        this.setAttribute("aria-pressed", "false")
+        const pressed = this.getAttribute("data-pressed")
+        this.setAttribute("aria-pressed", pressed ?? "false")
+        this.setAttribute("_", `
+        on click 
+          if @aria-pressed equals 'true' 
+            set @aria-pressed to 'false'
+          else 
+            set @aria-pressed to 'true'
+        `)
       }
 
       // menu
