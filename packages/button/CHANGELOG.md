@@ -1,5 +1,11 @@
 # @ariabones/button
 
+## 0.2.1
+
+### Patch Changes
+
+- 73364f9: build packages before publishing
+
 ## 0.2.0
 
 ### Minor Changes
