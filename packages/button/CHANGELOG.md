@@ -1,5 +1,11 @@
 # @ariabones/button
 
+## 0.3.0
+
+### Minor Changes
+
+- 63a029f: remove hypescript dependency
+
 ## 0.2.1
 
 ### Patch Changes
