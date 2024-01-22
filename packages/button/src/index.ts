@@ -27,13 +27,14 @@ class Button extends HTMLButtonElement {
       if (newValue === "toggle") {
         const pressed = this.getAttribute("data-pressed")
         this.setAttribute("aria-pressed", pressed ?? "false")
-        this.setAttribute("_", `
-        on click 
-          if @aria-pressed equals 'true' 
-            set @aria-pressed to 'false'
-          else 
-            set @aria-pressed to 'true'
-        `)
+        this.addEventListener("click", () => {
+          const ariaPressed = this.getAttribute("aria-pressed") ?? "false"
+          if (ariaPressed === "true") {
+            this.setAttribute("aria-pressed", "false")
+          } else {
+            this.setAttribute("aria-pressed", "true")
+          }
+        })
       }
 
       // menu
