@@ -36,12 +36,15 @@ class Button extends HTMLButtonElement {
           }
         })
       }
-
       // menu
       if (newValue === "menu") {
         this.setAttribute("aria-haspopup", "menu")
       }
     }
+  }
+
+  get pressed() {
+    return this.getAttribute("data-pressed");
   }
 }
 
