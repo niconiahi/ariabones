@@ -1,11 +1,13 @@
 {
   "name": "@ariabones/playground",
-  "type": "module",
-  "version": "0.0.0",
   "private": true,
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "tsc && vite build",
+    "deploy": "wrangler pages deploy",
+    "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
@@ -13,6 +15,8 @@
     "@ariabones/button": "workspace:*"
   },
   "devDependencies": {
-    "vite": "^5.0.8"
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "wrangler": "^3.55.0"
   }
 }

@@ -4,19 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="https://unpkg.com/hyperscript.org@0.9.12"></script>
-    <title>Vite + TS + Hyperscript</title>
+    <title>Vite + TS</title>
+    <script src="https://unpkg.com/hyperscript.org@0.9.12"></script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.ts"></script>
-    <section style="display: grid; grid-template-columns: 1fr; row-gap: 8px">
-      <button is="ariabones-button" _="on click set @disabled to true">
-        Disable button
-      </button>
-      <button is="ariabones-button" data-type="toggle" data-pressed="true">
-        Toggle button
-      </button>
-    </section>
   </body>
 </html>
